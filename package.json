@@ -1,0 +1,36 @@
+{
+  "name": "html_to_atjson",
+  "version": "1.0.0",
+  "description": "A mini cli for converting a string of HTML to annotated JSON",
+  "main": "index.js",
+  "author": "Paul Kinchla (https://paulkinchla.com)",
+  "license": "Apache-2.0",
+  "bin": "./index.js",
+  "private": true,
+  "pkg": {
+    "targets": [
+      "node14-linux-x64"
+    ]
+  },
+  "dependencies": {
+    "@atjson/document": "^0.24.5",
+    "@atjson/offset-annotations": "^0.41.2",
+    "@atjson/source-html": "^0.32.8"
+  },
+  "devDependencies": {
+    "add": "^2.0.6",
+    "colors": "^1.4.0",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "pkg": "^5.5.2",
+    "prettier": "^2.5.1",
+    "yargs": "^17.3.1"
+  },
+  "scripts": {
+    "make_executable": "pkg .",
+    "generate_annotations": "node index.js",
+    "lint": "eslint . || prettier-eslint --write $PWD/**/*.js",
+    "lint:fix": "node ./node_modules/.bin/eslint --fix $PWD/**/*.js"
+  }
+}
