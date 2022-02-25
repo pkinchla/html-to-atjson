@@ -19,8 +19,6 @@ function HTMLToAtjson(html) {
     .canonical()
     .toJSON();
 
-  console.log(JSON.stringify(source, null, 2));
-
   const annotations = source.annotations
     .filter((item) => !item.type.startsWith('-html'))
     .map((item) => {
