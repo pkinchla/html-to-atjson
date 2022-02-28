@@ -2,7 +2,8 @@
 const HTMLSource = require('@atjson/source-html');
 const OffsetSource = require('@atjson/offset-annotations');
 const colors = require('colors');
-var argv = require('yargs/yargs')(process.argv.slice(2))
+
+const argv = require('yargs/yargs')(process.argv.slice(2))
   .command(
     '"string of html" --pretty-print',
     'convert string of html to annotated Atjson. --pretty-print is optional.'
