@@ -13,19 +13,19 @@
     ]
   },
   "dependencies": {
-    "@atjson/document": "^0.24.5",
-    "@atjson/offset-annotations": "^0.41.2",
-    "@atjson/source-html": "^0.32.8"
+    "@atjson/document": "^0.29.5",
+    "@atjson/offset-annotations": "^0.48.0",
+    "@atjson/source-html": "^0.36.0"
   },
   "devDependencies": {
     "add": "^2.0.6",
     "colors": "^1.4.0",
-    "eslint": "^8.9.0",
-    "eslint-config-prettier": "^8.4.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "pkg": "^5.5.2",
-    "prettier": "^2.5.1",
-    "yargs": "^17.3.1"
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "pkg": "^5.8.1",
+    "prettier": "^3.2.5",
+    "yargs": "^17.7.2"
   },
   "scripts": {
     "make_executable": "pkg .",
